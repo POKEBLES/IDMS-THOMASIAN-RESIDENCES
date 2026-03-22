@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thomasian Residences | IDMS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="dashboard-layout">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <i class="ph-fill ph-buildings"></i>
+                </div>
+                <div>
+                    <h1 class="brand-name">Thomasian Residences</h1>
+                    <span class="brand-sub">Admin IDMS</span>
+                </div>
+            </div>
+
+            <nav class="sidebar-nav" id="sidebarNav">
+                <a href="#" class="nav-item active" data-view="dashboard">
+                    <i class="ph ph-squares-four"></i>
+                    <span>Dashboard</span>
+                </a>
+                <a href="#" class="nav-item" data-view="tenant">
+                    <i class="ph ph-users"></i>
+                    <span>Tenant Profiles</span>
+                </a>
+                <a href="#" class="nav-item" data-view="payment">
+                    <i class="ph ph-credit-card"></i>
+                    <span>Payment Processing</span>
+                </a>
+                <a href="#" class="nav-item" data-view="inventory">
+                    <i class="ph ph-archive-box"></i>
+                    <span>Inventory Tracking</span>
+                </a>
+                <a href="#" class="nav-item" data-view="room">
+                    <i class="ph ph-door"></i>
+                    <span>Room Management</span>
+                </a>
+                <a href="#" class="nav-item" data-view="maintenance">
+                    <i class="ph ph-wrench"></i>
+                    <span>Maintenance</span>
+                </a>
+            </nav>
+
+            <div class="sidebar-footer">
+                <div class="admin-profile">
+                    <div class="avatar">
+                        <i class="ph ph-user"></i>
+                    </div>
+                    <div class="admin-info">
+                        <span class="admin-name">Admin User</span>
+                        <span class="admin-role">Super Administrator</span>
+                    </div>
+                </div>
+                <button class="logout-btn">
+                    <i class="ph ph-sign-out"></i>
+                </button>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <header class="topbar">
+                <div class="page-title">
+                    <h2 id="pageTitle">Dashboard Overview</h2>
+                    <p id="pageSubtitle" class="text-muted">Welcome back, here's what's happening today.</p>
+                </div>
+                <div class="topbar-actions">
+                    <button class="icon-btn" aria-label="Notifications">
+                        <i class="ph ph-bell"></i>
+                        <span class="badge">3</span>
+                    </button>
+                    <button class="icon-btn" aria-label="Settings">
+                        <i class="ph ph-gear"></i>
+                    </button>
+                </div>
+            </header>
+
+            <div class="content-wrapper" id="contentArea">
+                <!-- Content will be injected here via JavaScript -->
+            </div>
+        </main>
+    </div>
+
+    <!-- Modal for Forms -->
+    <div class="modal-overlay" id="formModal">
+        <div class="modal-container">
+            <header class="modal-header">
+                <h3 id="modalTitle">Form</h3>
+                <button class="close-modal-btn" id="closeModalBtn">
+                    <i class="ph ph-x"></i>
+                </button>
+            </header>
+            <div class="modal-body" id="modalBody">
+                <!-- Form content injected here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
